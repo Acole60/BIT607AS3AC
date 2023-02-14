@@ -1,0 +1,355 @@
+/*settings */
+* {
+    box-sizing: border-box;
+    /*box size includes padding and borders */
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+/* background settings*/
+
+html {
+    background: #008080;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+/*navigation bar*/
+nav a,
+nav div {
+    font-size: 0.8rem;
+    word-spacing: 0.4rem;
+    letter-spacing: 0.4rem;
+    font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+
+
+a:hover {
+    transition: 0.2s;
+}
+
+/*Media queries*/
+/*Large/medium screens*/
+@media screen and (min-width: 641px) {
+    #logo_main {
+        font-size: 10rem;
+    }
+
+    main h1 {
+        font-size: 4.5rem;
+    }
+}
+
+/* Small screens */
+@media screen and (max-width: 640px) {
+    #logo_main {
+        font-size: 20vw;
+    }
+
+    main h1 {
+        font-size: 7vw;
+    }
+}
+
+
+/* Header settings*/
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(315deg, rgba(0, 0, 0, 0.219) 0%, rgba(0, 0, 0, 0.8) 100%), url(./images/restauranthome.jpg);
+    min-height: 75%;
+}
+
+/*Logo settings*/
+#logo_main {
+    font-family: 'Sofia Sans', sans-serif;
+    letter-spacing: 0.5rem;
+    text-shadow: 2px 2px 17px #000000;
+}
+
+/*slogan on the header */
+#slogan_main {
+    color: white;
+    font-size: 0.8rem;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    text-transform: uppercase;
+    word-spacing: 0.4rem;
+    padding: 0.2rem;
+    letter-spacing: 0.3rem;
+    background-color: #5A5A5A;
+}
+
+/*main settings*/
+main h2 {
+    letter-spacing: 0.3rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+h1.border_bottom {
+    border-bottom: white 2px solid;
+}
+
+main h1,
+header h1 {
+    letter-spacing: 0.4rem;
+    padding: 0.8rem;
+    font-family: 'Sofia Sans', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 17px #000000;
+    margin: 2rem 0;
+}
+
+main a,
+main a:visited {
+    word-spacing: 0;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+main span,
+main p {
+    color: black;
+    font-size: 0.9rem;
+}
+
+main div {
+    border-radius: 2px;
+
+}
+
+.spaced {
+    letter-spacing: 0.2rem;
+}
+
+.shadow {
+    -webkit-box-shadow: 0px 0px 8px 1px #000000;
+    box-shadow: 0px 0px 8px 1px #000000;
+}
+
+/* 3 column row for larger screens*/
+
+@media screen and (min-width: 641px) {
+    .grid-row-3col {
+        display: -ms-grid;
+        display: grid;
+        max-width: 1000px;
+        grid-template-columns: repeat(3, 1fr);
+        -ms-grid-columns: repeat(3, 1fr);
+        grid-auto-rows: auto;
+        -ms-grid-rows: auto;
+    }
+}
+
+/*for desktops and tablets */
+@media screen and (min-width: 641px) {
+    .grid-row-2col {
+        max-width: 1000px;
+        display: -ms-grid;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        -ms-grid-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        -ms-grid-rows: auto;
+    }
+}
+
+/*smaller screen settings*/
+@media screen and (max-width: 640px) {
+
+    .grid-row-3col,
+    .grid-row-2col {
+        max-width: 350px;
+    }
+}
+
+.grid-row-3col {
+    margin: 1rem auto 0 auto;
+}
+
+.grid-row-2col {
+    margin: 1rem auto 0 auto;
+}
+
+.col {
+    text-align: center;
+    padding: 0.9rem;
+}
+
+.card {
+    background-color: #CDCECB;
+    padding: 0.8rem;
+    justify-items: center;
+    height: 100%;
+    display: table;
+    width: 100%;
+}
+
+.card > div {
+    align-items: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+h2 a:hover {
+    border-bottom: black 2px solid;
+}
+
+.compact {
+    font-size: 0.8rem;
+    letter-spacing: 0.05rem;
+    word-spacing: 0;
+    text-decoration: none;
+}
+
+/*menu settings*/
+
+.menu_item {
+    margin: 1rem;
+}
+
+.menu_item > p {
+    margin: 0;
+    padding: 0;
+    font-size: 0.9rem;
+    letter-spacing: 0.2rem;
+}
+
+.menu_item span,
+.wine_price {
+    font-size: 0.9rem;
+    color: rgb(134, 21, 21);
+}
+
+.item {
+    font-weight: bold;
+}
+
+.description {
+    color: rgb(73, 54, 54);
+    letter-spacing: 0.2rem;
+    font-size: 0.7rem;
+    font-weight: normal;
+}
+
+.menu_category {
+    display: inline-block;
+    color: whitesmoke;
+    background-color: #8b0000;
+}
+th {
+    display: none;
+
+}
+.wine {
+    color: rgb(73, 54, 54);
+    letter-spacing: 0.2rem;
+    font-size: 0.9rem;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+
+.wine_price {
+    letter-spacing: 0.2rem;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+
+/* reservation settings*/
+#reservation_button {
+    text-transform: uppercase;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    transition: 0.4s;
+    font-size: 0.8rem;
+    background-color: #8b0000;
+    -webkit-box-shadow: 0px 0px 8px 1px #000000;
+    box-shadow: 0px 0px 8px 1px #000000;
+    color:white;
+    max-width: 100%;
+    word-wrap: break-word;
+    letter-spacing: 0.3rem;
+    border-radius: 2px;
+}
+
+.upper_case {
+    text-transform: uppercase;
+}
+
+.white_border {
+    border: solid 2px white;
+    -webkit-box-shadow: 0px 0px 8px 1px #000000;
+    box-shadow: 0px 0px 8px 1px #000000;
+}
+
+p {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 0.8rem;
+    color: black;
+    padding: 1rem;
+}
+
+.img_desktop {
+    max-width: 350px;
+    max-height: 380px;
+    width: 100%;
+}
+
+.border {
+    border: solid rgb(70, 70, 70) 1px;
+}
+
+/*footer settings*/
+footer {
+    background-color: #5A5A5A;
+    padding: 2rem;
+}
+
+footer > p {
+    color: white;
+}
+
+p.modal {
+    text-transform: none;
+    text-align: left;
+    color: black;
+}
+
+.bolded {
+    font-weight: bold;
+    color: black;
+}
+
+.emphasized {
+    font-style: italic;
+    color: black;
+}
+
+.iframe  {
+    height:100%; 
+    width:100%;
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 10%;
+    /* 16:9 */
+    width: 100% !important;
+    height: auto !important;
+}
+

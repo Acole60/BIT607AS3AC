@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <!-- Page title -->
+    <title>HAUKAI - Contacts </title>
+    <!-- import W3.css framework-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Google font import-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Sofia+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Desktop navigation bar-->
+        <div class="w3-top w3-bar">
+            <a href="./index.html" class="w3-bar-item w3-dark-grey w3-button w3-hover-teal w3-hide-small"> HOME </a>
+            <a href="./menu.html" class="w3-bar-item w3-dark-grey w3-button w3-hover-teal w3-hide-small"> FOOD </a>
+            <a href="./reservations.html" class="w3-bar-item w3-dark-grey  w3-button w3-hover-teal w3-hide-small">RESERVATION</a>
+            <!--active page -->
+            <div class="w3-teal  w3-bar-item w3-button  w3-hover-teal"> CONTACT </div>
+            <a href="./hours.html" class="w3-bar-item w3-dark-grey w3-button w3-hover-teal w3-hide-small"> HOURS </a>
+            <a href="javascript:void(0)" class="w3-bar-item w3-dark-grey w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">MENU &#9776;</a>
+
+        </div>
+
+        <!-- hamburger menu for small screens-->
+        <div id="nav_small" class="w3-top w3-bar-block w3-dark-grey w3-dark-grey w3-hide w3-hide-large w3-hide-medium">
+            <a href="./index.html" class="w3-bar-item w3-button w3-hover-teal"> HOME </a>
+            <a href="./menu.html" class="w3-bar-item w3-button w3-hover-teal"> FOOD </a>
+            <a href="./reservations.html" class="w3-bar-item w3-button w3-hover-teal">RESERVATION</a>
+            <a href="./hours.html" class="w3-bar-item w3-button w3-hover-teal"> HOURS </a>
+        </div>
+
+        <!-- to collapse navigation bar on small screens-->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("nav_small");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else {
+                    x.className = x.className.replace(" w3-show", "fccc");
+                }
+            }
+        </script>
+    
+    <header>
+        <h1 aria-level="1" class="border_bottom">WHAKAPA | CONTACT</h1>
+    </header>
+
+    <!--main content-->
+       <div class="grid-row-2col">
+            <!-- CONTACT -->
+            <div class="col">
+                <div class=" card shadow w3-hover-white ">
+                    <div style="vertical-align: top;">
+                        <h2 aria-level="2">CONTACT US</h2>
+                        <p>To contact Haukai for general enquiries, private functions and catering,
+                            <br> please contact us at:
+                            <br><br>+64 9 401 4019<br>  <br>
+                            <a href="mailto:info@thehaukai.com">info@haukai.com</a>
+                        </p>
+                        <div id="address">
+                            <h2 aria-level="2">LOCATION</h2>
+                            <p>1 Island Street <br> Kerikeri, Bay of Islands <br> New Zealand</p>
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- google maps-->
+            <div class="col">
+                <div class="card shadow w3-hover-white ">
+                    <div style="vertical-align: top;">
+                        <div class="videoWrapper">
+                    <div id="map">
+                        <h2 aria-level="2"> MAP</h2>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1629.5477006120852!2d173.94867455642733!3d-35.22899509835623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0bb76f05800a6d%3A0x912328fde4819391!2sHaukai%20Restaurant!5e0!3m2!1sen!2snz!4v1676258802609!5m2!1sen!2snz" 
+                        width="400" height="300" style="border:0;" allowfullscreen=" " title="Location map"></iframe>  
+                    </div>
+                    </div>
+                    </div>
+            </div>
+        </div>
+</div>
+        <!-- reservation button -->
+        <div class="w3-center">
+            <p><a href="./reservations.html" class="w3-button w3-hover-#CDCECB" id="reservation_button">MAKE A RESERVATION</a> </p>
+        </div>
+
+        <footer>
+        <div class="w3-container w3-center">
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-border w3-dark-grey w3-hover-#CDCECB">Privacy Statement</button> 
+            <div id="id01" class="w3-modal">
+                <div class="w3-modal-content w3-animate-opacity">
+                    <div class="w3-container w3-black">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                        <h2 aria-level="2">Privacy Statement</h2>
+                    </div>
+                    <div class="w3-container">
+                        <p class="modal">
+                            <br> We collect personal information from you, including information about your:<br>
+                            <span class="emphasized">- name<br>
+                                - contact information<br>
+                                - location<br></span>
+                            We collect your personal information in order to to secure booking made via our web application and
+                            collect your location to make sure Google directions are correct. <br>
+                            Providing some information is optional. If you choose not to enter personal informaition, we'll not be able to make a reservation in the Haukai restaurant.<br>
+                            If you choose not to enter location information we'll be unable to provide accurate direction to the restaurant.
+                            <br> We keep your information safe by storing it in encrypting files and only allowing our administration staff to access it .
+
+                            <br>We keep your information for 1 day after the reservation has taken place at which point we securely destroy it by erasing digits.
+                            <br>You have the right to ask for a copy of any personal information we hold about you, and to ask for it to be corrected if you think it is wrong.
+                            <br>If you’d like to ask for a copy of your information, or to have it corrected, please contact us at <span class="bolded"> info@haukai.co.nz, or (09) 401-4019, or 1 Island Street Kerikeri, Bay of Islands.</span> <br><br>
+                        </p>
+                        <!--close-->
+                        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-black ">Close</button>
+                        <br><br>
+                    </div>
+                </div>
+                <script>
+                    // to get and close when clicking anyway outside of modal
+                    var modal = document.getElementById('id01');
+                    window.onclick = function(event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                </script>
+            </div>
+            <!-- Copyright-->
+            <div>
+                <p class="w3-text-white"> @HAUKAI, 2023 <br> </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
