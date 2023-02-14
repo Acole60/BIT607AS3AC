@@ -2,39 +2,40 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/web/styles.css">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Page title -->
-    <title>HAUKAI - Contacts </title>
+    <title>HAUKAI - HOURS </title>
     <!-- import W3.css framework-->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <!-- Google font import-->
+    <!-- google font import-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Sofia+Sans&display=swap" rel="stylesheet">
+
+   
 </head>
 
 <body>
-
-    <!-- Desktop navigation bar-->
+    <!--Desktop navigation bar-->
         <div class="w3-top w3-bar">
-            <a href="./index.html" class="w3-bar-item w3-dark-grey w3-button w3-hover-teal w3-hide-small"> HOME </a>
-            <a href="./menu.html" class="w3-bar-item w3-dark-grey w3-button w3-hover-teal w3-hide-small"> FOOD </a>
-            <a href="./reservations.html" class="w3-bar-item w3-dark-grey  w3-button w3-hover-teal w3-hide-small">RESERVATION</a>
-            <!--active page -->
-            <div class="w3-teal  w3-bar-item w3-button  w3-hover-teal"> CONTACT </div>
-            <a href="./hours.html" class="w3-bar-item w3-dark-grey w3-button w3-hover-teal w3-hide-small"> HOURS </a>
+            <a href="/web/index.html" class="w3-bar-item w3-dark-grey w3-button w3-hover-teal w3-hide-small"> HOME </a>
+            <a href="/web/menu.html" class="w3-bar-item w3-dark-grey w3-button w3-hover-teal w3-hide-small"> FOOD </a>
+            <a href="/web/reservations.html" class="w3-bar-item w3-dark-grey  w3-button w3-hover-teal w3-hide-small">RESERVATION</a>
+            <a href="/web/contact.html" class="w3-bar-item w3-dark-grey w3-button w3-hover-teal w3-hide-small"> CONTACT </a>
+            <!-- active page -->
+            <div class="w3-teal  w3-bar-item w3-button  w3-hover-teal"> HOURS </div>
             <a href="javascript:void(0)" class="w3-bar-item w3-dark-grey w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">MENU &#9776;</a>
 
         </div>
 
         <!-- hamburger menu for small screens-->
         <div id="nav_small" class="w3-top w3-bar-block w3-dark-grey w3-dark-grey w3-hide w3-hide-large w3-hide-medium">
-            <a href="./index.html" class="w3-bar-item w3-button w3-hover-teal"> HOME </a>
-            <a href="./menu.html" class="w3-bar-item w3-button w3-hover-teal"> FOOD </a>
-            <a href="./reservations.html" class="w3-bar-item w3-button w3-hover-teal">RESERVATION</a>
-            <a href="./hours.html" class="w3-bar-item w3-button w3-hover-teal"> HOURS </a>
+            <a href="/web/index.html" class="w3-bar-item w3-button w3-hover-teal"> HOME </a>
+            <a href="/web/menu.html" class="w3-bar-item w3-button w3-hover-teal"> FOOD </a>
+            <a href="/web/reservations.html" class="w3-bar-item w3-button w3-hover-teal">RESERVATION</a>
+            <a href="/web/contact.html" class="w3-bar-item w3-button w3-hover-teal"> CONTACTS </a>
         </div>
 
         <!-- to collapse navigation bar on small screens-->
@@ -48,56 +49,54 @@
                 }
             }
         </script>
-    
+
     <header>
-        <h1 aria-level="1" class="border_bottom">WHAKAPA | CONTACT</h1>
+        <h1 aria-level="1" class="border_bottom">HAORA TORO | HOURS</h1>
     </header>
 
     <!--main content-->
-       <div class="grid-row-2col">
-            <!-- CONTACT -->
+        <div class="grid-row-2col">
+            <!-- Opening hours -->
+            <div class="col">
+                <div class="  card shadow w3-hover-white upper_case ">
+                    <div>
+                        <h2 aria-level="2"> Opening hours</h2>
+                        <p>
+                            Monday: Closed<br>
+                            Tuesday: Closed<br>
+                            Wednesday: 5pm-11pm<br>
+                            Thursday: 5pm-11pm<br>
+                            Friday: 5pm-11pm<br>
+                            Saturday: 5pm-11pm<br>
+                            Sunday: 5pm-11pm<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- google calendar -->
             <div class="col">
                 <div class=" card shadow w3-hover-white ">
-                    <div style="vertical-align: top;">
-                        <h2 aria-level="2">CONTACT US</h2>
-                        <p>To contact Haukai for general enquiries, private functions and catering,
-                            <br> please contact us at:
-                            <br><br>+64 9 401 4019<br>  <br>
-                            <a href="mailto:info@thehaukai.com">info@haukai.com</a>
-                        </p>
-                        <div id="address">
-                            <h2 aria-level="2">LOCATION</h2>
-                            <p>1 Island Street <br> Kerikeri, Bay of Islands <br> New Zealand</p>
-                     
+                    <div>
+                        <iframe src="https://calendar.google.com/calendar/embed?src=en.new_zealand%23holiday%40group.v.calendar.google.com&ctz=Pacific%2FAuckland" 
+                        style="border: 0" width="600" height="600" Title="Google Calendar"></iframe>
                     </div>
                 </div>
             </div>
         </div>
-            <!-- google maps-->
-            <div class="col">
-                <div class="card shadow w3-hover-white ">
-                    <div style="vertical-align: top;">
-                        <div class="videoWrapper">
-                    <div id="map">
-                        <h2 aria-level="2"> MAP</h2>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1629.5477006120852!2d173.94867455642733!3d-35.22899509835623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0bb76f05800a6d%3A0x912328fde4819391!2sHaukai%20Restaurant!5e0!3m2!1sen!2snz!4v1676258802609!5m2!1sen!2snz" 
-                        width="400" height="300" style="border:0;" allowfullscreen=" " title="Location map"></iframe>  
-                    </div>
-                    </div>
-                    </div>
-            </div>
-        </div>
-</div>
-        <!-- reservation button -->
-        <div class="w3-center">
-            <p><a href="./reservations.html" class="w3-button w3-hover-#CDCECB" id="reservation_button">MAKE A RESERVATION</a> </p>
+
+
+        <!--reservation button-->
+        <div class="w3-display w3-center">
+            <p><a  href="/web/reservations.html" class="w3-button w3-hover-#CDCECB" id="reservation_button">MAKE A RESERVATION</a> </p>
         </div>
 
-        <footer>
+    <footer>
         <div class="w3-container w3-center">
-            <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-border w3-dark-grey w3-hover-#CDCECB">Privacy Statement</button> 
+            <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-border w3-dark-grey w3-hover-#CDCECB">Privacy Statement</button>
             <div id="id01" class="w3-modal">
                 <div class="w3-modal-content w3-animate-opacity">
+                    <!--privacy statement-->
                     <div class="w3-container w3-black">
                         <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
                         <h2 aria-level="2">Privacy Statement</h2>
@@ -133,11 +132,10 @@
                     }
                 </script>
             </div>
-            <!-- Copyright-->
+            <!--Copyright-->
             <div>
                 <p class="w3-text-white"> @HAUKAI, 2023 <br> </p>
             </div>
         </div>
     </footer>
-</body>
-</html>
+</body></html>
