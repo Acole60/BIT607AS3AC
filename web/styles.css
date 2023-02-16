@@ -30,8 +30,6 @@ nav div {
     font-family: 'Roboto', Helvetica, sans-serif;
 }
 
-
-
 a:hover {
     transition: 0.2s;
 }
@@ -338,18 +336,5 @@ p.modal {
 .emphasized {
     font-style: italic;
     color: black;
-}
-
-.iframe  {
-    height:100%; 
-    width:100%;
-}
-
-.videoWrapper {
-    position: relative;
-    padding-bottom: 10%;
-    /* 16:9 */
-    width: 100% !important;
-    height: auto !important;
 }
 
